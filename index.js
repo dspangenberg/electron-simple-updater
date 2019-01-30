@@ -91,8 +91,8 @@ class SimpleUpdater extends events.EventEmitter {
 
     // Return if we run not compiled application
     if (app.isPackaged === false || app.getName() === 'Electron') {
-      this.options.disabled = true;
-      return this;
+      // this.options.disabled = true;
+      // return this;
     }
 
     this.options = normalizeOptions(options);
